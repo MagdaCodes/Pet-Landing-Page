@@ -1,21 +1,27 @@
 :root {
-  --branding-color: #fcf8b8;
-  --secondary-color: #d6ecfb;
-  --main-color: #ffabde;
+  --branding-color: #e1a0b5;
+  --secondary-color: #33464f;
+  --main-color: #e7ddcd;
   --heading-font-family: "Montserrat", sans-serif;
   --default-font-family: "Oswald", sans-serif;
 }
 
 .hero {
-  background-image: url(/images/background.png);
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center;
+  background-color: var(--main-color);
   text-align: center;
   padding: 160px 20px;
 }
+h1,
+h2,
+h3,
+h4,
+h5 {
+  color: var(--secondary-color);
+}
+
 h1 {
   font-family: var(--heading-font-family);
+  color: #33464f;
   font-size: 66px;
   font-weight: bold;
   text-transform: uppercase;
@@ -27,9 +33,17 @@ h2 {
   font-weight: lighter;
 }
 .btn-hero {
-  background: var(--branding-color);
+  background: var(--secondary-color);
   border-radius: 4px;
+  color: var(--branding-color);
   font-size: 18px;
   line-height: 25px;
   padding: 10px 25px;
+}
+.about-section h1 {
+  line-height: 90px;
+  font-size: 64px;
+}
+.about-section p {
+  font-size: 15px;
 }
