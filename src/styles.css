@@ -29,12 +29,14 @@ h1 {
   font-size: 66px;
   font-weight: bold;
   text-transform: uppercase;
+  margin-bottom: 20px;
 }
 h2 {
   font-family: var(--default-font-family);
   font-weight: 70;
   font-family: 36px;
   font-weight: lighter;
+  margin-bottom: 60px;
 }
 
 .btn-hero {
@@ -46,28 +48,98 @@ h2 {
   padding: 10px 25px;
 }
 .about-section h1 {
-  line-height: 90px;
+  line-height: 70px;
   font-size: 64px;
+  margin-top: 70px;
 }
 .about-section p {
   font-size: 15px;
 }
+
 .heading {
-  padding: 120px 0 0 60px;
+  padding: 70px 0 40px 60px;
 }
 .logo {
   max-width: 50px;
+  margin-right: 100px;
+  object-position: left;
+}
+.photo {
+  transition: all 0.2s ease-in-out;
+}
+.photo:hover {
+  transform: scale(1.1);
 }
 nav {
   padding: 20px 0 0 0;
 }
 nav li {
   display: inline;
+  font-size: 25px;
   list-style: none;
   line-height: 50px;
   font-family: var(--default-font-family);
+  margin-left: 30px;
 }
+nav a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: var(--secondary-color);
+  transition: all 150ms ease-in-out;
+}
+nav a:hover,
+nav li.active a {
+  color: var(--branding-color);
+}
+
 ul {
   padding: 0;
   margin: 0;
+}
+@media (max-width: 900px) {
+  h1 {
+    font-size: 35px;
+    text-align: center;
+    margin: 0px 20px 10px 0px;
+  }
+  h2 {
+    font-size: 12px;
+  }
+  nav li {
+    font-size: 12px;
+  }
+  img {
+    padding: 0px;
+  }
+  ul {
+    margin-right: 20px;
+  }
+  .hero {
+    margin: 20px 40px 40px 40px;
+  }
+  .heading {
+    padding: 20px 0px 0px 30px;
+  }
+
+  .img-fluid {
+    max-width: 150px;
+  }
+  .btn-hero {
+    font-size: 10px;
+    line-height: 10px;
+    padding: 10px 15px;
+  }
+
+  .about-section h1 {
+    font-size: 35px;
+    line-height: 40px;
+    margin-top: 50px;
+  }
+  .about-section a {
+    margin-left: 30px;
+  }
+  .about-img {
+    margin-top: 90px;
+    max-width: 210px;
+  }
 }

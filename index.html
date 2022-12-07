@@ -29,38 +29,50 @@
       crossorigin="anonymous"
     ></script>
   </head>
-  <body>    <div class="container">
-    <nav class="d-flex justify-content-between">
-  
-      <img src="images/COTONlogo.png" class="logo" alt="coton-logo" >
-      <ul>
-       
-        <li>
-          <a href="/about.html">about</a>
-         </li>
-        <li>
-          <a href="/care.html">care</a>
-         </li>
-        <li><a href="/puppy.html">puppy</a>
+  <body>
+    <div class="container">
+      <nav class="d-flex justify-content-between">
+        <a href="/">
+          <img
+          src="images/COTONlogo.png"
+          class="logo d-none d-md-block"
+          alt="coton-logo"
+            />
+      </a>
+        <ul>
+          <li class="active">
+            <a href="/">home</a>
           </li>
-        <li><a href="/gallery.html">gallery</a>
+          <li>
+            <a href="/about.html"> about</a>
           </li>
-           <li><a href="/links.html">links
-          
-           </a>
+          <li>
+            <a href="/care.html"> care</a>
           </li>
-      </ul>
-</div>
-    </nav>
-    <div class="hero">
-      <div class="row">
-        <div class="col-6 heading">
-          <h1>COTON DE TULÉAR</h1>
-          <h2 class="mb-5">fluffy companion with cheerful personality</h2>
-          <a href="/about.html" class="btn btn-hero">about breed</a>
-        </div>
-        <div class="col-6">
-         <img src="images/cotonhero.svg" class="img-fluid md-5" width="500" />
+          <li><a href="/puppy.html"> puppy</a></li>
+          <li><a href="/gallery.html"> gallery</a></li>
+          <li><a href="/links.html"> links </a></li>
+        </ul>
+      </nav>
+    </div>
+
+      <div class="hero">
+        <div class="row">
+          <div class="col-6 heading">
+            <h1>COTON DE TULÉAR</h1>
+            <h2 class="mb-5 d-none d-md-block">
+              fluffy companion with cheerful personality
+            </h2>
+            <div id="outer">
+              <a href="/about.html" class="btn btn-hero">about breed</a>
+            </div>
+         </div> 
+          <div class="col-6">
+            <img
+              src="images/cotonhero.svg"
+              class="img-fluid photo"
+              width="500"
+            />
           </div>
         </div>
       </div>
