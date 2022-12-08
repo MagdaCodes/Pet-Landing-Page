@@ -31,29 +31,31 @@
   </head>
   <body>
     <div class="container">
-      <nav class="d-flex justify-content-between">
-        <a href="/">
-          <img
-            src="images/COTONlogo.png"
-            class="logo d-none d-md-block"
-            alt="coton-logo"
-          />
-        </a>
-        <ul>
-          <li class="active">
-            <a href="/">home</a>
-          </li>
-          <li>
-            <a href="#about"> about</a>
-          </li>
-          <li>
-            <a href="/care.html"> care</a>
-          </li>
-          <li><a href="/puppy.html"> puppy</a></li>
-          <li><a href="#gallery"> gallery</a></li>
-          <li><a href="/links.html"> links </a></li>
-        </ul>
-      </nav>
+      <div id="home">
+        <nav class="d-flex justify-content-between">
+          <a href="/">
+            <img
+              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/057/201/original/COTONlogo.png?1670520710"
+              class="logo d-none d-md-block"
+              alt="coton-logo"
+            />
+          </a>
+          <ul>
+            <li class="active">
+              <a href="/">home</a>
+            </li>
+            <li>
+              <a href="#about"> about</a>
+            </li>
+            <li>
+              <a href="#care"> care</a>
+            </li>
+            <li><a href="/puppy.html"> puppy</a></li>
+            <li><a href="#gallery"> gallery</a></li>
+            <li><a href="#links"> links </a></li>
+          </ul>
+        </nav>
+      </div>
       <div class="hero">
         <div class="row">
           <div class="col-6 heading">
@@ -65,7 +67,7 @@
           </div>
           <div class="col-6">
             <img
-              src="images/cotonhero.svg"
+              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/057/231/original/Untitled_design_%285%29.png?1670527245"
               class="img-fluid photo"
               width="500"
             />
@@ -73,17 +75,23 @@
         </div>
       </div>
       <div class="about-section container">
-        <div class="row">
+        <div class="row mt-5">
           <div class="col-6">
             <div id="about">
               <h3 class="about-heading">Coton de Tuléar</h3>
             </div>
+            <div>
+              <div class="nav-links d-flex justify-content-start">
+                <a href="#home"><i class="fa-solid fa-paw"></i></a>
 
-            <a href="/gallery.html" class="gallery btn btn-hero">more photos</a>
+                <a href="#gallery"><i class="fa-solid fa-bone"></i></a>
+                <a href="#links"><i class="fa-solid fa-heart"></i></a>
+              </div>
+            </div>
           </div>
           <div class="col-6">
             <img
-              src="images/cotonoutside.jpg"
+              src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/057/135/original/cotonoutside.jpg?1670500039"
               alt="coton_outside"
               class="about-img img-fluid mt-5"
             />
@@ -113,8 +121,8 @@
             <ul>
               <li class="box-info">
                 <div class="row mb-2">
-                  <div class="col-6 characteristics">size</div>
-                  <div class="col-6">
+                  <div class="col-3 characteristics">size</div>
+                  <div class="col-9 description">
                     It's small dog. Average Weight is 13.5 pounds (5.6 kg) and
                     is 10-12 inches (25-30 cm) tall
                   </div>
@@ -122,16 +130,16 @@
               </li>
               <li class="box-info">
                 <div class="row mb-2">
-                  <div class="col-6 characteristics">color</div>
-                  <div class="col-6">
+                  <div class="col-3 characteristics">color</div>
+                  <div class="col-9 description">
                     White, Champagne & White, Black & White, Tri-color
                   </div>
                 </div>
               </li>
               <li class="box-info">
                 <div class="row mb-2">
-                  <div class="col-6 characteristics">Life Expectancy</div>
-                  <div class="col-6">
+                  <div class="col-3 characteristics">Life Expectancy</div>
+                  <div class="col-9 description">
                     14-16 years The average lifespan of Coton de Tulear: 15
                     years
                   </div>
@@ -139,17 +147,44 @@
               </li>
               <li class="box-info">
                 <div class="row mb-2">
-                  <div class="col-6 characteristics">temperament</div>
-                  <div class="col-6">
+                  <div class="col-3 characteristics">temperament</div>
+                  <div class="col-9 description">
                     Affectionate, Happy, Loyal, Friendly, Good with kids and
                     other pets
+                  </div>
+                </div>
+              </li>
+              <li class="box-info">
+                <div class="row mb-2">
+                  <div class="col-3 characteristics">temperament</div>
+                  <div class="col-9 description">
+                    Affectionate, Happy, Loyal, Friendly, Good with kids and
+                    other pets
+                  </div>
+                </div>
+              </li>
+              <li class="box-info">
+                <div class="row mb-2">
+                  <div class="col-3 characteristics">temperament</div>
+                  <div class="col-9 description">
+                    Affectionate, Happy, Loyal, Friendly, Good with kids and
+                    other pets
+                  </div>
+                </div>
+              </li>
+              <li class="box-info">
+                <div class="row mb-2">
+                  <div class="col-3 characteristics">Life Expectancy</div>
+                  <div class="col-9 description">
+                    14-16 years The average lifespan of Coton de Tulear: 15
+                    years
                   </div>
                 </div>
               </li>
             </ul>
           </div>
         </div>
-        <h4>Care</h4>
+        <h4 id="care">Care</h4>
         <p>
           The Coton is fairly active who needs moderate amount of exercise. It
           may need to be bathed weekly, every two weeks, or monthly, depending
@@ -161,45 +196,105 @@
           they don't like to be left alone and might develope separation
           anxiety.
         </p>
-        <div id="gallery">
+
+        <div id="gallery"></div>
+        <div class="gallery-panel">
           <h4>gallery</h4>
         </div>
-        <h5>Sweetness overload...</h5>
-        <img
-          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/055/491/original/cotonpuppy.jpg?1669573120"
-          alt=""
-          width="500"
-        />
-        <img
-          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/057/134/original/puppycoton.jpeg?1670500015"
-          alt=""
-          width="500"
-        />
-        <img
-          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/057/136/original/cotonpups.jpg?1670500057"
-          alt=""
-          width="500"
-        />
-        <img
-          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/057/144/original/puppies-g77db7d6db_1920.jpg?1670503443"
-          alt=""
-          width="500"
-        />
-        <img
-          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/057/146/original/dog-g8f19b1ea4_1920.jpg?1670503612"
-          alt=""
-          width="500"
-        />
-        <img
-          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/057/148/original/coton-de-tulear-gce98c4c31_1920.jpg?1670503772"
-          alt=""
-          width="500"
-        />
-        <img
-          src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/057/149/original/coton-de-tulear-g6830dbfb3_1920.jpg?1670504225"
-          alt=""
-          width="500"
-        />
+        <ul class="image-gallery">
+          <div class="row">
+            <div class="col-4">
+              <img
+                src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/055/491/original/cotonpuppy.jpg?1669573120"
+                alt=""
+                width="150"
+              />
+            </div>
+            <div class="col-4">
+              <img
+                src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/057/134/original/puppycoton.jpeg?1670500015"
+                alt=""
+                width="150"
+              />
+            </div>
+            <div class="col-4">
+              <img
+                src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/057/136/original/cotonpups.jpg?1670500057"
+                alt=""
+                width="150"
+              />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-4">
+              <img
+                src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/057/144/original/puppies-g77db7d6db_1920.jpg?1670503443"
+                alt=""
+                width="150"
+              />
+            </div>
+            <div class="col-4">
+              <img
+                src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/057/146/original/dog-g8f19b1ea4_1920.jpg?1670503612"
+                alt=""
+                width="150"
+              />
+            </div>
+            <div class="col-4">
+              <img
+                src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/057/148/original/coton-de-tulear-gce98c4c31_1920.jpg?1670503772"
+                alt=""
+                width="150"
+              />
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-4">
+              <img
+                src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/057/149/original/coton-de-tulear-g6830dbfb3_1920.jpg?1670504225"
+                alt=""
+                width="150"
+              />
+            </div>
+            <div class="col-4">
+              <img
+                src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/057/151/original/Untitled_design_%283%29.png?1670505228"
+                alt=""
+                width="150"
+              />
+            </div>
+            <div class="col-4">
+              <img
+                src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/057/153/original/Untitled_design_%282%29.png?1670505242"
+                alt=""
+                width="150"
+              />
+            </div>
+          </div>
+        </ul>
+        <div class="gallery-panel">
+          <h4 id="links">Links</h4>
+        </div>
+        <div class="row mt-5">
+          <div class="col-6">
+            <p>Want to know more about breed?</p>
+            <ul>
+              check these Coton breeders
+              <li>Coton Brie</li>
+              <li>The Sweetest Coton FCI</li>
+              <li>Carolina Cotons</li>
+            </ul>
+          </div>
+          <div class="col-6">
+            <p>want to connect with other pet owners?</p>
+            <ul>
+              check these Coton Lovers
+              <li>Coton Brie</li>
+              <li>The Sweetest Coton FCI</li>
+              <li>Carolina Cotons</li>
+            </ul>
+          </div>
+        </div>
       </div>
     </div>
   </body>
