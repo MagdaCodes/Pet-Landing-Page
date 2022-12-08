@@ -5,6 +5,9 @@
   --heading-font-family: "Montserrat", sans-serif;
   --default-font-family: "Oswald", sans-serif;
 }
+.navigation {
+  margin: 0px 0px;
+}
 
 .hero {
   background-color: var(--main-color);
@@ -38,6 +41,27 @@ h2 {
   font-weight: lighter;
   margin-bottom: 60px;
 }
+h3 {
+  font-family: var(--heading-font-family);
+  font-size: 66px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 90px;
+  padding-top: 46px;
+}
+p {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: var(--default-font-family);
+}
+li {
+  list-style: none;
+}
+.characteristics {
+  font-family: var(--heading-font-family);
+  font-weight: bold;
+  text-transform: uppercase;
+}
 
 .btn-hero {
   background: var(--secondary-color);
@@ -47,10 +71,14 @@ h2 {
   line-height: 25px;
   padding: 10px 25px;
 }
+.about-section a {
+  margin-left: 70px;
+}
 .about-section h1 {
   line-height: 70px;
   font-size: 64px;
   margin-top: 70px;
+  padding: 90px;
 }
 .about-section p {
   font-size: 15px;
@@ -69,6 +97,21 @@ h2 {
 }
 .photo:hover {
   transform: scale(1.1);
+}
+.box {
+  align-items: center;
+  border: 3px solid #33464f;
+  background-color: #33464f;
+  color: #e7ddcd;
+  height: 200px;
+  box-shadow: 2px 2px 2px #33464f;
+  border-radius: 3%;
+  max-width: fit-content;
+}
+.box-info {
+  font-size: 10px;
+  display: inline;
+  height: auto;
 }
 nav {
   padding: 20px 0 0 0;
@@ -104,6 +147,11 @@ ul {
   }
   h2 {
     font-size: 12px;
+  }
+  h3 {
+    font-size: 35px;
+    text-align: center;
+    margin: 0px 20px 10px 0px;
   }
   nav li {
     font-size: 12px;
