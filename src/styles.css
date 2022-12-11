@@ -262,4 +262,7 @@ ul {
     margin-top: 90px;
     max-width: 210px;
   }
+  .nav-links a {
+    padding-top: 20px;
+  }
 }
