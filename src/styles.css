@@ -5,6 +5,7 @@
   --heading-font-family: "Montserrat", sans-serif;
   --default-font-family: "Oswald", sans-serif;
 }
+
 .navigation {
   margin: 0px 0px;
 }
@@ -17,6 +18,7 @@
   max-height: 600px;
   border-radius: 2px;
   box-shadow: 0 10px 15px var(--secondary-color);
+  transition: all 150ms ease-in-out;
 }
 
 h1,
@@ -34,6 +36,7 @@ h1 {
   text-transform: uppercase;
   margin-bottom: 20px;
 }
+
 h2 {
   font-family: var(--default-font-family);
   font-weight: 70;
@@ -56,6 +59,7 @@ h4 {
 }
 
 p {
+  color: var(--secondary-color);
   text-align: center;
   text-transform: uppercase;
   font-family: var(--default-font-family);
@@ -66,6 +70,7 @@ li {
 }
 a {
   text-decoration: none;
+  font-family: var(--default-font-family);
 }
 a:hover {
   color: var(--branding-color);
@@ -79,6 +84,11 @@ a:hover {
   line-height: 25px;
   margin-top: 40px;
   padding: 10px 25px;
+  transition: all 150ms ease-in-out;
+}
+.btn-hero:hover {
+  background-color: var(--branding-color);
+  color: var(--secondary-color);
 }
 .about-section a {
   margin-left: 70px;
@@ -91,6 +101,7 @@ a:hover {
 }
 .about-section p {
   font-size: 15px;
+  color: var(--secondary-color);
 }
 
 .heading {
@@ -100,7 +111,7 @@ a:hover {
   max-width: 80px;
   margin-right: 100px;
   object-position: left;
-  margin: 0px 0px 10px 80px;
+  margin: 0px 0px 10px 70px;
 }
 .photo {
   outline-color: #e1a0b5;
@@ -121,6 +132,13 @@ a:hover {
   font-size: 10px;
   display: inline;
   height: auto;
+}
+h5 {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: var(--default-font-family);
+  margin: 20px 0px;
+  color: var(--branding-color);
 }
 .characteristics {
   color: var(--branding-color);
@@ -145,8 +163,9 @@ a:hover {
 }
 .gallery-panel {
   background-color: var(--branding-color);
+  opacity: 0.5;
   border-radius: 2px;
-  box-shadow: 0 10px 15px var(--secondary-color);
+  box-shadow: 0px 5px 10px 0px var(--secondary-color);
   padding: 10px;
 }
 .image-gallery {
@@ -173,11 +192,11 @@ a:hover {
 }
 .breeder-links {
   text-align: center;
-  margin-right: 60px;
+  margin-right: 0px;
   text-decoration: none;
 }
 nav {
-  padding: 20px 0 0 0;
+  padding: 50px 0 0 0;
 }
 nav li {
   display: inline;
@@ -200,15 +219,17 @@ nav li.active a {
 
 ul {
   padding: 0;
-  margin: 0;
+  margin-right: 70px;
 }
+
 .nav-links i {
-  background-color: var(--main-color);
+  background-color: var(--secondary-color);
   border-radius: 50%;
   color: var(--branding-color);
   font-size: 25px;
   margin: 0 20px;
   padding: 15px;
+  opacity: 0.9;
   transition: all 160ms ease-in-out;
 }
 .nav-links i:hover {
