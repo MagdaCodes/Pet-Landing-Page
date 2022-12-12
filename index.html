@@ -49,7 +49,6 @@
             <li>
               <a href="#care"> care</a>
             </li>
-            <li><a href="/puppy.html"> puppy</a></li>
             <li><a href="#gallery"> gallery</a></li>
             <li><a href="#links"> links </a></li>
           </ul>
@@ -194,8 +193,16 @@
             </div>
           </div>
         </div>
-        <h4 id="care">Care</h4>
-        <p>
+        <div class="row">
+          <div class="col-6">
+            <div id="care">
+              <h4>care</h4>
+            </div>
+          </div>
+
+          <div class="gallery-panel"></div>
+        </div>
+        <p class="mt-5">
           The Coton is fairly active who needs moderate amount of exercise. It
           may need to be bathed weekly, every two weeks, or monthly, depending
           on how dirty he gets. Coton is admired for fluffy, like cloud coat.
@@ -207,23 +214,23 @@
           anxiety.
         </p>
 
-        <div id="gallery"></div>
-        <div class="gallery-panel mb-5">
-          <div class="row">
-            <div class="col-6">
-              <a href="#home">
-                <img
-                  src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/057/201/original/COTONlogo.png?1670520710"
-                  class="logo d-none d-md-block"
-                  alt="coton-logo"
-                />
-              </a>
-            </div>
-            <div class="col-6">
+        <div class="row mt-5">
+          <div class="col-6">
+            <div id="gallery">
               <h4>gallery</h4>
             </div>
           </div>
+          <div class="col-6 d-none d-lg-block">
+            <div class="nav-links d-flex justify-content-evenly mt-4">
+              <a href="#home"><i class="fa-solid fa-paw"></i></a>
+              <a href="#gallery"
+                ><i class="fa-solid fa-address-card" alt="about"></i
+              ></a>
+              <a href="#links"><i class="fa-solid fa-heart"></i></a>
+            </div>
+          </div>
         </div>
+        <div class="gallery-panel"></div>
         <ul class="image-gallery">
           <div class="row">
             <div class="col-4">
@@ -295,35 +302,74 @@
             </div>
           </div>
         </ul>
-        <div class="gallery-panel">
-          <h4 id="links">Links</h4>
-        </div>
+
+        <h4 id="links">links</h4>
+        <div class="gallery-panel"></div>
         <div class="links-box mt-5">
           <p>Want to know more about breed?</p>
           <p>Check these Coton de Tulear breeders</p>
           <ul>
-            <li>
-              Coton Brie
-              <div class="breeder-links">facebook</div>
+            <li class="breeder-links">
+              <a
+                href="https://www.facebook.com/profile.php?id=100063672753247" target="_blank"
+                title="Coton Brie Facebook"
+              >
+                Coton Brie</a
+              >
             </li>
-
-            <li>The Sweetest Coton FCI</li>
-            <li>Carolina Cotons</li>
+            <li class="breeder-links">
+              <a
+                href="https://www.facebook.com/TheSweetestCoton"target="_blank"
+                title="The Sweetest Coton Facebook"
+              >
+                The Sweetest Coton FCI</a
+              >
+            </li>
+            <li class="breeder-links">
+              <a
+                href="https://www.facebook.com/carolinacotons"target="_blank"
+                title="Carolina Cotons Facebook"
+                >Carolina Cotons</a
+              >
+            </li>
           </ul>
 
           <p class="mt-5">want to connect with other pet owners?</p>
           <p>Check these Coton Lovers</p>
           <ul>
-            <li>Coton Brie</li>
-            <li>The Sweetest Coton FCI</li>
-            <li>Carolina Cotons</li>
+            <li class="breeder-links">
+              <a href="https://www.instagram.com/coton.santiago/" target="_blank">
+                Santiago Coton de Tulear</a
+              >
+            </li>
+            <li class="breeder-links">
+              <a href="https://www.instagram.com/coton.pako/" target="_blank">Pako the Coton</a>
+            </li>
+            <li class="breeder-links">
+              <a href="https://www.instagram.com/joeythecoton_pdx/" target="_blank"
+                >Joey, Coton de Tulear 🎀</a
+              >
+            </li>
+              <li class="breeder-links">
+              <a href="https://www.instagram.com/mila_coton_de_tulear/" target="_blank"
+                >Mila Coton De Tulear</a
+              >
+            </li>
+             </li>
+              <li class="breeder-links">
+              <a href="https://www.instagram.com/simba_khare/" target="_blank" title=" Simba's Instagram"
+                >🐾Simba the Coton de Tulear🐾</a
+              >
+            </li>
           </ul>
         </div>
       </div>
       <footer class="mt-5 mb-5">
         <p>
-          This page was coded by Magda Samuel and it's
-          <a href="https://github.com/MagdaCodes/Pet-Landing-Page">
+          This page was coded by Magda Samuel, it's hosted on
+          <a href="https://startling-mermaid-76dd22.netlify.app/" target="_blank"> Netlify </a>
+          and it's
+          <a href="https://github.com/MagdaCodes/Pet-Landing-Page" target="_blank">
             open-sourced</a
           >
         </p>

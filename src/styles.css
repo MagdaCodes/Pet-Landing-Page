@@ -29,7 +29,7 @@ h5 {
 
 h1 {
   font-family: var(--heading-font-family);
-  font-size: 66px;
+  font-size: 80px;
   font-weight: bold;
   text-transform: uppercase;
   margin-bottom: 20px;
@@ -61,6 +61,7 @@ p {
   text-align: center;
   text-transform: uppercase;
   font-family: var(--default-font-family);
+  margin-top: 20px;
 }
 li {
   list-style: none;
@@ -70,8 +71,10 @@ li {
   background: var(--secondary-color);
   border-radius: 4px;
   color: var(--branding-color);
+  font-family: var(--default-font-family);
   font-size: 18px;
   line-height: 25px;
+  margin-top: 40px;
   padding: 10px 25px;
 }
 .about-section a {
@@ -134,15 +137,14 @@ li {
 .col-9 {
   padding-right: 25px;
 }
+.care-links a {
+  margin-left: 90px;
+}
 .gallery-panel {
   background-color: var(--branding-color);
   border-radius: 2px;
   box-shadow: 0 10px 15px var(--secondary-color);
-  margin-top: 50px;
   padding: 10px;
-  text-align: center;
-  text-transform: uppercase;
-  transition: ease-in-out 0.25s;
 }
 .image-gallery {
   display: flex;
@@ -166,11 +168,10 @@ li {
 .col-4 img:hover {
   transform: scale(1);
 }
-.links-box li,
-.links-box ul {
+.breeder-links {
   text-align: center;
+  margin-right: 60px;
 }
-
 nav {
   padding: 20px 0 0 0;
 }
@@ -209,6 +210,13 @@ ul {
 .nav-links i:hover {
   background-color: var(--branding-color);
   color: var(--main-color);
+}
+footer {
+  background-color: var(--main-color);
+  border-radius: 2px;
+  box-shadow: 0 10px 15px var(--secondary-color);
+  margin: 10px;
+  padding: 10px;
 }
 
 @media (max-width: 900px) {
